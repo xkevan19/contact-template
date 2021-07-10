@@ -1,0 +1,10 @@
+# made for netlify users
+# example of custom headers
+
+/*
+  cache-control: max-age=0
+  cache-control: no-cache
+  cache-control: no-store
+  cache-control: must-revalidate
+
+# Taken from netlify official docs https://docs.netlify.com/routing/headers/

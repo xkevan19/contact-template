@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="A contact template">
+    <meta name="author" content="codewithkevan">
+    <meta name="keywords" content="contact">
+
+    <!-- Title Page-->
+    <title>Contact Template</title>
+
+    <!-- Icons font CSS-->
+    <link href="vendor/mdi-font/css/material-design-iconic-font.min.css" rel="stylesheet" media="all">
+    <link href="vendor/font-awesome-4.7/css/font-awesome.min.css" rel="stylesheet" media="all">
+    <!-- Font special for pages-->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i" rel="stylesheet">
+
+    <!-- Vendor CSS-->
+    <link href="vendor/select2/select2.min.css" rel="stylesheet" media="all">
+    <link href="vendor/datepicker/daterangepicker.css" rel="stylesheet" media="all">
+
+    <!-- Main CSS-->
+    <link href="css/main.css" rel="stylesheet" media="all">
+</head>
+
+<body>
+    <div class="page-wrapper bg-blue p-t-100 p-b-100 font-robo">
+        <div class="wrapper wrapper--w680">
+            <div class="card card-1">
+                <div class="card-heading"></div>
+                <div class="card-body">
+                    <h2 class="title">Student Registration</h2>
+                    <!-- 
+                        1.If you're publishing the form online use the a direct path
+                    <form method="POST" action="/success.html">
+
+                        2.You can also change the autocomplete back to on
+                        3.Netlify users require ( data-netlify="true" and a special "name" for the form )
+                    -->
+                    <form method="POST" action="/success.html" autocomplete="off">
+                        <div class="input-group">
+                            <input class="input--style-1" type="text" placeholder="FULL NAME" name="name" required>
+                            <!-- required attribute for validity -->
+                            <!-- feel free to experiment and add your own javascript or jquery validity-->
+                        </div>
+                        <div class="input-group">
+                            <input class="input--style-1" type="email" placeholder="ENTER VALID EMAIL" name="email" required>
+                        </div>
+                        <div class="row row-space">
+                            <div class="col-2">
+                                <div class="input-group">
+                                    <input class="input--style-1 js-datepicker" type="text" placeholder="BIRTHDATE" name="birthday" required>
+                                    <i class="zmdi zmdi-calendar-note input-icon js-btn-calendar"></i>
+                                </div>
+                            </div>
+                            <div class="col-2">
+                                <div class="input-group">
+                                    <div class="rs-select2 js-select-simple select--no-search">
+                                        <select name="gender">
+                                            <option disabled="disabled" selected="selected">GENDER</option>
+                                            <option>Male</option>
+                                            <option>Female</option>
+                                            <option>Other</option>
+                                        </select>
+                                        <div class="select-dropdown"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="input-group">
+                            <div class="rs-select2 js-select-simple select--no-search">
+                                <select name="class">
+                                    <option disabled="disabled" selected="selected">CLASS</option>
+                                    <option>Marketing</option>
+                                    <option>Sales</option>
+                                    <option>Human Resource</option>
+                                    <option>Accounts</option>
+                                    <option>Economics</option>
+                                    <option>Pure Sciences</option>
+                                    <option>Medical Sciences</option>
+                                    <option>Science & Technology</option>
+                                    <option>Social Science</option>
+                                    <option>Legal Affairs</option>
+                                    <option>Criminology</option>
+                                    <option>Engineering</option>
+                                    <option>Humanities & Education</option>
+                                    <option>Food & Agriculture</option>
+                                </select>
+                                <div class="select-dropdown"></div>
+                            </div>
+                        </div>
+                        <div class="row row-space">
+                            <div class="col-2">
+                                <div class="input-group">
+                                    <input class="input--style-1" type="text" placeholder="REGISTRATION CODE" name="res_code">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="p-t-20">
+                            <button class="btn btn--radius btn" type="submit" id="submit">Submit</button>
+                            <!-- Below you can change these to a tags if you wish -->
+                            <button class="btn btn--radius btn" type="button" id="submit">Login</button>
+                            <button class="btn btn--radius btn" type="button" id="submit">Tour</button>
+                            <button class="btn btn--radius btn" type="button" id="submit">Home</button>
+                            <!-- Two breaklines to clear a space between buttons and links -->
+                            <br>
+                            <br>
+                            <!-- Build and link sections or pages within href="success.html" -->
+                            <a href="">Admin</a>
+                            <a href="">Contact</a>
+                            <a href="">Help</a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Jquery JS-->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <!-- Vendor JS-->
+    <script src="vendor/select2/select2.min.js"></script>
+    <script src="vendor/datepicker/moment.min.js"></script>
+    <script src="vendor/datepicker/daterangepicker.js"></script>
+
+    <!-- Main JS-->
+    <script src="js/global.js"></script>
+
+</body>
+<!-- This templates was made by codewithkevan (https://codewithkevan.com) -->
+
+</html>
+<!-- end document-->
